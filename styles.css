@@ -1,0 +1,94 @@
+.board {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    align-items: stretch;
+    max-width: 800px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.tile {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+@media (max-width: 700px) {
+    .tile {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tile {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 350px) {
+    .tile {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.tile {
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile.A::before {
+  content: "🙂";
+}
+
+
+.tile.B::before {
+  content: "😆";
+}
+
+
+.tile.C::before {
+  content: "🤮";
+}
+
+.tile.D::before {
+  content: "😎";
+}
+
+.tile.E::before {
+  content: "😍";
+}
+
+.tile.F::before {
+  content: "😭";
+}
+
+.tile.G::before {
+  content: "🤣";
+}
+
+.tile.H::before {
+  content: "😉";
+}
+
+.tile.transp{
+    background-color: transparent;
+}
+
+#tries{
+    text-align: center;
+}
+
+.transparent{
+  background-color: transparent;
+}
